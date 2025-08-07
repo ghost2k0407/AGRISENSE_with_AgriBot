@@ -36,9 +36,7 @@ AgriSense is an AI-powered web platform for early diagnosis and recommendation o
 
 ---
 
-## 🚀 Getting Started
-
-#### 2.Run the FastAPI server
+### Run the FastAPI server
 ```bash
 cd backend
 uvicorn main:app --reload
@@ -46,7 +44,7 @@ uvicorn main:app --reload
 
 ---
 
-### 3. Frontend Setup (React + Vite)
+### Frontend Setup (React + Vite)
 
 #### Install dependencies
 ```bash
