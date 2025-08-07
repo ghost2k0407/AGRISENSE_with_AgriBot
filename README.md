@@ -38,28 +38,7 @@ AgriSense is an AI-powered web platform for early diagnosis and recommendation o
 
 ## 🚀 Getting Started
 
-### 📁 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/agrisense.git
-cd agrisense
-```
-
----
-
-### ⚙️ 2. Backend Setup (FastAPI)
-
-#### Create & activate a virtual environment
-```bash
-python -m venv venv
-source venv/bin/activate  # or .\venv\Scripts\activate on Windows
-```
-
-#### Install dependencies
-```bash
-pip install -r backend/requirements.txt
-```
-
-#### Run the FastAPI server
+#### 2.Run the FastAPI server
 ```bash
 cd backend
 uvicorn main:app --reload
@@ -67,7 +46,7 @@ uvicorn main:app --reload
 
 ---
 
-### 🌐 3. Frontend Setup (React + Vite)
+### 3. Frontend Setup (React + Vite)
 
 #### Install dependencies
 ```bash
@@ -80,28 +59,6 @@ npm install
 npm run dev
 ```
 
----
-
-## 📂 Project Structure
-
-```
-agrisense/
-├── backend/
-│   ├── main.py                  # FastAPI app entry
-│   ├── routes/
-│   │   ├── diagnosis.py         # ViT + FAISS + Gemini
-│   │   └── chatbot.py           # AgriBot LLM chat
-│   └── utils/                   # CLIP, ViT, translation utils
-├── frontend/
-│   ├── src/
-│   │   ├── components/          # React components
-│   │   ├── pages/               # Diagnosis, Chatbot, History
-│   │   └── App.tsx              # Main layout and routing
-├── README.md
-└── ...
-```
-
----
 
 ## 🧪 API Routes
 
@@ -119,8 +76,6 @@ agrisense/
 - ✅ Telugu
 - ✅ Kannada
 - ✅ Malayalam
-
-Uses `googletrans` for real-time translation of LLM responses.
 
 ---
 
