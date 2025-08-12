@@ -5,7 +5,7 @@ load_dotenv()
 
 def get_google_ai_response(prompt: str):
     genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-    model = genai.GenerativeModel("gemini-2.5-pro")
+    model = genai.GenerativeModel("gemini-2.5-flash")
     chat = model.start_chat(history=[])
     response = chat.send_message(prompt, stream=False)
     return response.text
